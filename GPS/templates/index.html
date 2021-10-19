@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>老人防摔与求救系统定位查询系统</title>
+</head>
+<body>
+
+    <form action="/GPS" method="post" action="{{ url_for('GPS') }}" target="_blank">
+
+        请输入短信中的$GNRMC相关信息：
+        <br>
+        <input type="text" name="text" size="100" value="$GNRMC,043835.000,A,2141.04929,N,11055.06852,E,11.52,161.85,200421,,,A*49">
+        <br>
+        <input type="submit" value="确定">
+
+    </form>
+
+</body>
+</html>
